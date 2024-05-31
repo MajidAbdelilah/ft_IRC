@@ -65,7 +65,7 @@ int create_socket_and_listen() {
     hints.ai_flags = AI_PASSIVE;
     hints.ai_family = PF_UNSPEC;
     hints.ai_socktype = SOCK_STREAM;
-    int ret = getaddrinfo("127.0.0.1", "2121", &hints, &addr);
+    int ret = getaddrinfo("127.0.0.1", "8080", &hints, &addr);
 	if(ret != 0)
 	{
 		std::cout << "getaddrinfo() failed!\n";
